@@ -32,3 +32,5 @@ def rule_connection(configuration, commands, device):
     # version = device.cli('show version')
     # assert 'text' in commands.version
     # version = device.cli('show version')
+    # assert 'text' in commands.version
+    # version = device.cli('show version')
