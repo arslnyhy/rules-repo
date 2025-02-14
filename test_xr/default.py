@@ -27,7 +27,9 @@ def rule_function(source: Source):
     # commands=dict(version='show version')
 )
 def rule_connection(configuration, commands, device):
-    assert 'aaa' in configuration
+    assert 'grpc' in configuration
+    # assert 'text' in commands.version
+    # version = device.cli('show version')
     # assert 'text' in commands.version
     # version = device.cli('show version')
     # assert 'text' in commands.version
