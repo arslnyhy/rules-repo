@@ -27,6 +27,8 @@ def rule_function(source: Source):
     # commands=dict(version='show version')
 )
 def rule_connection(configuration, commands, device):
-    assert 'text' in configuration
+    assert 'aaa' in configuration
+    # assert 'text' in commands.version
+    # version = device.cli('show version')
     # assert 'text' in commands.version
     # version = device.cli('show version')
