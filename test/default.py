@@ -19,3 +19,14 @@ def rule_function(source: Source):
     # assert 'ssh mgmt-auth public-key' in source.lines
     pass
 '''
+
+
+@medium(
+    name='rule_connection',
+    platform=['cisco_xe'],
+    # commands=dict(version='show version')
+)
+def rule_connection(configuration, commands, device):
+    assert 'text' in configuration
+    # assert 'text' in commands.version
+    # version = device.cli('show version')
